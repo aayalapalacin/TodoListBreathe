@@ -5,7 +5,14 @@ export const UserInput = () => {
 	const handleListItem = (event) => {
 		setListItem(event.target.value);
 	};
-
+	const todoItem = (event) => {
+		if (event.keycode === 13) {
+			return true;
+		} else {
+			return false;
+		}
+	};
+	console.log(todoItem);
 	return (
 		<div>
 			<input
@@ -14,8 +21,14 @@ export const UserInput = () => {
 				placeholder="What needs to be done?"
 				onChange={handleListItem}
 			/>
-
-			<input type="text" className="item" value={listItem} />
+			{todoItem && (
+				<input
+					type="text"
+					className="item"
+					value={listItem}
+					onChange={handleListItem}
+				/>
+			)}
 
 			<input type="text" className="item itemsLeft" />
 		</div>
