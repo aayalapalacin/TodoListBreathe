@@ -19,12 +19,16 @@
     height: auto;
     background-color: grey;
 }
-
+ 
 .item{
     padding-left: 33px;
     font-size: 19px;
     width: 100%;
     line-height: 36px;
+}
+
+.mouseOver:hover{
+    cursor: pointer;
 }
 
 .item.itemsLeft{
