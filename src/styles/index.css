@@ -17,7 +17,11 @@
     align-items: center;
     width: auto;
     height: auto;
-    background-color: grey;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.itemsLeftDiv{
+    padding: 0px 0px 5px 12px;
 }
  
 .item{
@@ -25,6 +29,8 @@
     font-size: 19px;
     width: 100%;
     line-height: 36px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .mouseOver:hover{
@@ -35,6 +41,20 @@
     padding-left: 8px;
     line-height: 20px;
     font-size: 10px;
+}
+
+.inputField{
+width: 100%;
+}
+
+ul{
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.itemLeftDiv{
+    display: flex;
+
 }
 /* 
 

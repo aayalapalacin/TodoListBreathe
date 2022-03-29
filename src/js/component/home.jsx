@@ -1,6 +1,5 @@
 import React from "react";
 import { UserInput } from "./UserInput";
-
 //include images into your bundle
 
 //create your first component

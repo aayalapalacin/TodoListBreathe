@@ -40,6 +40,7 @@ export const UserInput = () => {
 			// the item is the string item of the array called variable such as: ["first thing"] (first thing =item)
 			// looks like key={index} allows you to choose a different item in array
 			// array is set up like: ["this is index 1", "this is index 2"]
+
 			<li className="list-group-item item" key={index}>
 				{item}
 
@@ -70,7 +71,7 @@ export const UserInput = () => {
 			<div>
 				<ul>{todo}</ul>
 			</div>
-			<div> {todo.length} items left</div>
+			<div className="itemsLeftDiv"> {todo.length} items left</div>
 		</div>
 	);
 };
